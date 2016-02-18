@@ -55,5 +55,16 @@ class ScrabbleCalculator
         }
         return $totalScore;
     }
+
+    function randomLetters($length = 7)
+    {
+        $characters = "AABCDEEFGHIIJKLMNOOPQRSTUUVWXYZ";
+        $charLength = strlen($characters);
+        $randomString = '';
+        for ($i=0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charLength -1)] . " ";
+        }
+        return $randomString;
+    }
 }
 ?>
