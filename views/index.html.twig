@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <meta charset="utf-8">
+        <title>Scrabble!</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Scrabble Point Calculator <small> of awesomeness!!</small></h1>
+            <form action="/word">
+                <input type="text" name="scrabble">
+                <label for="scrabble">Enter your scrabble word here! Por favor!</label><br><br>
+                <button type="submit" name="button">Submit!</button><br><br>
+            </form>
+            <p>
+                Your Scrabble points are:
+            </p>
+            {% if result is not empty %}
+                {{ result }}
+            {% endif %}
+
+        </div>
+    </body>
+</html>

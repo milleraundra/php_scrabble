@@ -13,7 +13,7 @@ class ScrabbleCalculator
         $fivePoint = array("k");
         $eightPoint = array("j", "x");
         $tenPoint = array("q", "z");
-        
+
         $totalScore = 0;
 
         foreach ($input_word as $letter){
@@ -27,13 +27,11 @@ class ScrabbleCalculator
                     $totalScore += 2;
                 }
             }
-
             foreach ($threePoint as $index => $alphabet) {
                 if ($letter == $threePoint[$index]) {
                     $totalScore += 3;
                 }
             }
-
             foreach ($fourPoint as $index => $alphabet) {
                 if ($letter == $fourPoint[$index]) {
                     $totalScore += 4;
@@ -55,14 +53,7 @@ class ScrabbleCalculator
                 }
             }
         }
-
         return $totalScore;
-
     }
-
-
-
 }
-
-
 ?>

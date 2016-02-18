@@ -4,7 +4,6 @@
 
     class ScrabbleCalculatorTest extends PHPUnit_Framework_TestCase
     {
-
         function test_short_word()
         {
             //Arrange
@@ -43,7 +42,6 @@
             //Assert
             $this->assertEquals(33, $result);
         }
-
     }
 
 ?>
